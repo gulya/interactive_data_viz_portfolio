@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Data Visualization | Narrative Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+      <!-- heading -->
+      <div class="section" id="intro">
+        <div class="text">
+          <br />
+          <h1>Wrapped Youth: Music Nostalgia</h1>
+          <h2><span style="font-weight: 400"></span></h2>
+          <div class="byline">Gulya Radjapova &nbsp;|&nbsp; Interactive Data Visualization &nbsp;|&nbsp; December 2021</div><br />
+          <p style="margin-bottom:2em;">Every December Spotify releases Spotify Wrapped, a year end summary of music (and now podcasts) we have listened to during the previous years. 
+            While I do listen to quite a bit of music still, I don't really consider myself a person who is "really into music" anymore. I listen to some new releases,
+          but primarily stick to my favorite albums and artists. I don't feel that I need to be up to date with music either and I am fine just listening to what I like.  </p>
+
+          <p style="margin-bottom:2em;">While reviewing my Wrapped from 2021, I became curious to how, if at all my listening habits were different now than they were
+          when I was a teenager who prided herself in having impecabbale music taste. Thankfully, I was able to uncover my listening data from my youth via
+          <span class="one" style="background-color: #3C01E2; color:white;">last.fm</span>, which surprisingly had all of my data saved and ready to be downloaded.
+           </p>
+
+          <p>I wanted to explore how my listening habbits have changed compared to this years <span class="one" style="background-color: #3C01E2; color:white;">Spotify Wrapped</span>, which actually came out
+          while I was putting this project together, which also simplified my approach to the project. I focus on the summer 2007 to summer 2008 for this analysis, since that encompases a full academic year (a year increment
+        that was more relevant to me in high school that a calendar year) and the data was the cleanest for this time period. This period also coinsided with the first year back at home in Uzbekistan, after returning from a year of study abroad in the US during high school.
+      I think that being as exchange student during the previous year introduced me to a variety of new artists and expanded my taste.</p>
+      <hr />   
+    </div>
+      </div>
+
+      <!-- intro -->
+      <div class="section" id="one">
+        <div class="text">
+          <p style="margin-bottom:2em;">Spotify wrapped is designed for viral marketing, highlighting data points that users would want to share online with their friends.
+          It also has become standardized, with a goal of users comparing themselves to their friends by sharing the results of their Wrapped online </p>
+          <div class="section chart-section" id ="three">
+            <div class="chart-title">What is Spotify Wrapped?</div>
+            <div class="caption">
+              Spotify Wrapped is a <span style="background-color: #C0AFCE;">viral marketing campaign by Spotify</span>. Released in early December every year since 2016, the campaign allows Spotify users to view a <span style="background-color: #C0AFCE;">compilation of data about their activity</span> on the platform over the past year, then invites them to share it on social media.
+              <br />&nbsp;
+            </div>
+      </div>
+        </div>
+        <div class="image" id="imageone">
+          <img src="../images/intro_wrapped.jpg" alt="Center align image inside div using html and css"/>
+        </div>
+          <div class="caption">
+          While Spotify Wrapped is "personalized" based on your listening history, the narrative that is created is identical for each user of the platform.
+          Everyone is the main character of their own movie. Are we still individually different if we all receive the same narrative?
+          </div>
+      </div>
+
+
+       <!-- Total Listened -->
+       <div class="section" id="two">
+        <div class="text">
+          <hr />
+          <p style="margin-bottom:2em;"> In 2021, I listened to <span class="one" style="background-color:  #C0AFCE; ">22,231 minutes</span> 
+          on Spotify, which includes both podcasts and music. I estimate that I listen to poscasts approximately half of the time now, given the fact that 
+        I listen to The Daily, Up First, Who? Weekly and all the popular cult- or scam- based podcasts that are in the zeitgeist.</p>
+                <!-- description what it is -->
+          <div class="image" id="imageone">
+            <img src="../images/total_minutes.jpg" alt="Center align image inside div using html and css"/>
+          </div>
+          <br />&nbsp;
+          <p style="margin-bottom:2em;"> This means that in 2021, I listened to approximately 1,000 minutes of music every month. Looking at the data of my youth,
+          I see that I have listened to <span class="one" style="background-color: #3C01E2; color:white;">3,560 minutes </span> on average every month. I suspected that I spent more of my time listening to music, because I used to listen to music while 
+          doing homework (which occupied the most of my time) or when hiding from my family and being anti-social. It is still a surpising amount of time, given that I did not have access to a ubiquity of an iPhone and was primarily listening on iTunes while on my computer. </p>         
+          </div>  
+      </div>
+
+      <!-- bar -->
+      <div class="section chart-section" id="bar_chart1">
+        <div class="chart-title">Let's count them all </div>
+        <div class="caption">
+          See the number of songs, artists, albums and minutes of music I listened to in 2007-2008. 
+          <br />&nbsp;
+        </div>
+        <select id="dropdown1" name="dropdown1"></select>
+        <div class="chart" id="bar"></div>
+      </div>
+
+      <!-- text -->
+      <div class="section" id="bar_chart1_narrative">
+        <div class="text"><br /><br />
+          <p>What surpised me also, is looking at April 2008 and seeing so much time listening to music: listening to 1193 artists across 189 albums is a lot! I wasnted to further
+            breakdown these months by the top artists that I listened to and see whether I was exploring new music or re-listening to my usuals. </p>
+            <br />&nbsp;
+            <p>It does look like that in April, I did dig into the discography of my favorite artists. For example, I listened to a whooping 7 albums by <span class="one" style="background-color: #3C01E2; color:white;">Radiohead</span>, whereas in other months during the time period
+              I listen to one or two albums. Similarly, while <span class="one" style="background-color: #3C01E2; color:white;">Rufus Wainwright</span> was a favorite, I listened to all 5 of his albums. Thinking about what might have lead to such interest in digging deep into artists geographies,
+              the only thing I can think of is that it was close to the end of the semester and I was probably preparing for exams and finals.
+            </p>
+        </div>
+      </div>
+
+
+      <!-- heatmap -->
+      <div class="section chart-section" id="heatmap-section">
+        <hr />
+        <div class="chart-title">Heatmap: Timeline of music obsession</div>
+        <div class="caption">
+          This chart shows the top arists that I listened to over the time period, highlighting total minutes listened.  
+          <br />&nbsp;
+        </div>
+        <div class="chart" id="heatmap"><br /></div>
+        <!-- <hr /> -->
+      </div>
+
+      <!-- text -->
+      <div class="section" id="top_artists_narrative">
+        <div class="text"><br /><br />
+          <p>Every year Spotify also provides you with the top artists chart. In 2021, my top artists looked somewhat embarassing (it was after all, the year I became a <span style="background-color: #C0AFCE;">Swiftie?</span>)
+            I think it is fair to say that my music taste is much less hip nowadays, and I stay away from listening to Pitchfork darlings and stick to female pop stars and ocasionally Broadway showtunes (also a recent discovery).
+          </p>
+            <br />&nbsp;
+        </div>
+      </div>
+
+    <div class="section" id="one">
+      <div class="caption">
+        Top Artists by total minutes listened, 2007-2008</a>
+        </div>
+      <div class="chart" id="bar2"></div>
+      <div class="text">
+        <br />
+
+        <div class="image" id="imageone">
+          <br />&nbsp;
+          <br />&nbsp;
+          <img src="../images/top_artists.jpg" alt="Center align image inside div using html and css"/>
+        </div>
+      </div>
+    </div>
+
+      <!-- text -->
+      <div class="section" id="top_artists_narrative">
+        <div class="text"><br /><br />
+          <p>My top songs in 2021 were primarily by <span class="one" style="background-color:  #C0AFCE; ">Olivia Rodrigo</span> (I think because she reminds me of <span class="one" style="background-color: #3C01E2; color:white;">Paramore and Avril Lavigne</span> of my youth). 
+            My top 5 songs of my youth were less pop-y and more indie. Relistening to them, I do think they are more mellow and more melodic, blending in more seamlessly when trying to solve problem sets, putting together reports or even reading.
+          </p>
+            <br />&nbsp;
+        </div>
+      </div>
+
+    <div class="section" id="one">
+      <div class="caption">
+        Top Songs Listened, 2007-2008</a>
+        </div>
+      <iframe src="https://open.spotify.com/embed/playlist/114wlRJN9NRCt1cXtKzRZp" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <div class="text">
+        <br />
+
+        <div class="image" id="imageone">
+          <br />&nbsp;
+          <br />&nbsp;
+          <img src="../images/top_songs.jpg" alt="Center align image inside div using html and css"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- table -->
+    <div class="section" id="nine">
+      <div class="text">
+        <br />&nbsp;
+        <br />&nbsp;
+
+        <p style="margin-bottom:2em;"> At the end of the year Spotify also makes a playlist with 100 songs that emcompass the full year. I wanted to do the same here. 
+          Expanding beyond the top 5 and looking through the top 100 of the songs that I listened to the most, I am struck that I cannot recognize most.
+        There are familiar artists, for sure, but less than half bring out specific memories. </p>
+      </div>
+      <div class="chart-title">
+      <!-- <hr /> -->
+      Wrapped Youth Playlist</div>
+      <div class="caption">100 Songs I've listened to non-stop<br />&nbsp;</div>
+      <div class="chart" id="table"></div>
+    </div><br /><br />
+
+
+    <script src="../lib/d3.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
