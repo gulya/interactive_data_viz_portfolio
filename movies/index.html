@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.0/scrollama.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="visualization"></div>
+        <div class="text-wrapper">
+            <div class="text-content" id="introduction">
+                <h2>100 MOVIES</h2>
+                <p> I have been logging every movie I have seen for a while — to remember and reflect on what I have watched and to understand how my tastes have changed with time. 
+                    Here, I am only showing a 100 latest movies logged from my letterboxd and each <span class="one" style="background-color: lightpink; color:#FFE6E6;">square</span> represents a movie I have seen. 
+                    You can hover to see the tittle.  </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-1">
+                <h2>NEW MOVIES</h2>
+                <p>I am mostly keeping up with new movies. Most recently, I've watched movies that came out in <span class="one" style="background-color: #5bc8af; color:#FFE6E6;">2020s</span>
+                with some oldies and rewatches dispered througout.   </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-2">
+                <h2>2000s & 2010s</h2>
+                <p>The majority of remaining movies came out between <span class="one" style="background-color: #5fb0b7; color:#FFE6E6;">2000 and 2020</span>. 
+                    These include <i><b>GONE GIRL</b></i>, which came out in 2014 and I recently rewatched.  </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-3">
+                <h2>90s</h2>
+                <p>I only watched 6 movies that came out in <span class="one" style="background-color: #6c91bf; color:#FFE6E6;">in the 90s</span> within the last 100 movies. 
+                This includes <i><b>9 TO 5</b></i>, which came out in 1980. </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-4">
+                <h2>I GOTTA START WATCHING MORE OLDIES</h2>
+                <p>Got any recs?</p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-5">
+                <h2>HOW MUCH LONGER?</h2>
+                <p>While some enjoy <span class="one" style="background-color: #441151; color:#FFE6E6;">prolonged</span> movie experiences, I am a fan of a <span class="one" style="background-color: #883677; color:#FFE6E6;">tight 2 hour</span>
+                and even a bigger fan of <span class="one" style="background-color: #ca61c3; color:#FFE6E6;">tight 90 minutes</span> movies.</p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-6">
+                <h2>TOMATO METER</h2>
+                <p>I mostly watched movies with a relatively high <i>Rotten Tomatoes</i> score, like <span class="one" style="background-color: #ff686b; color:#FFE6E6;"> <b><i>PARASITE</i></b> </span> 
+                    with a <i>Rotten Tomato</i>Rotten Tomato score of 99. One movie notably had the lowest score — <span class="one" style="background-color: #708d81; color:#FFE6E6;"> <b><i>DONT'T WORRY DARLING</i></b> </span> with a score of 38. </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-7">
+                <h2>IMBD SCORE</h2>
+                <p> Highest <i>IMDB</i> score goes to  <span class="one" style="background-color: #004D00; color:#FFE6E6;"> <b><i>PULP FICTION</i></b> </span>,
+                and the lowest score goes to  <span class="one" style="background-color: #D4FCD4; color:#ca61c3;"> <b><i>FALLING FOR CHRISTMAS</i></b> </span>. 
+            While it certainly deserved this low score, it did signify return of Lindsay Lohan.  </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-8">
+                <h2>MY LETTERBOXD RATING</h2>
+                <p>While I don't always agree with critics, my scores are generally in line with the consensus.</p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-9">
+                <h2>REWATCHABLES</h2>
+                <p>Regarless of the scores, at the end of the day, the best movies are always those that I come back to and rewatch.</p>
+            </div>
+            <div class="spacer"></div>
+            <div class="text-content" id="paragraph-10">
+                <h2>FIN</h2>
+                <p><i><b>BY GULYA RADJAPOVA</b></i></p>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

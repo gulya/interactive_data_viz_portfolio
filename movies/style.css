@@ -1,0 +1,62 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9f9; /* Set the background color */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+#visualization {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-wrapper {
+    margin-top: 600px; /* Ensure the text starts below the visualization */
+}
+
+.text-content {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h2 {
+    margin: 20px 0;
+    font-weight: 700;
+    color: #2a2d43; /* Set the title color */
+}
+
+p {
+    margin: 10px 0;
+    font-weight: 400;
+    color: #414361;
+}
+
+.spacer {
+    height: 800px; /* Ensure there is enough space for scrolling */
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font: 12px 'Work Sans', sans-serif;
+    background: #fff0f3;
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;
+    visibility: visible;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
